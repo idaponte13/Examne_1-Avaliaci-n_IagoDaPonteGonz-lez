@@ -2,10 +2,9 @@
 
 **1. Explica métodos para 'abrir' unha consola/shell a un contenedor en execución.**
 
-Para poder abrir unha consola dun contenedor hai varios metodos. Se o facemos dende VSC, no apartado de docker previamente instalado fareos click dereito e podemos ver o apartado de `Attach Shell`. Se o facemos dende comandos na consola poderemos facer `docker exec -it (nome do contenedor) /bin/bash` en caso de ser ubuntu ou `/bin/sh` en caso de alpine.
+Para poder abrir unha consola dun contenedor hai varios metodos. Se o facemos dende VSC, no apartado de docker previamente instalado faremos click dereito e podemos ver o apartado de `Attach Shell`. Se o facemos dende comandos na consola poderemos facer `docker exec -it (nome do contenedor) /bin/bash` en caso de ser ubuntu ou `/bin/sh` en caso de alpine.
 
 **2. No contenedor anterior (en execución), qué opciones tes que ter usado ó arrincalo para poder interactuar coas súas entradas e salidas**
-
 
 `docker run -it (nome do contenedor)`
 
@@ -87,8 +86,8 @@ No apartado de `volumes` se gardará a configuración que fixeramos nese contene
 
 ```
 volumes:
-      - ./conf:/etc/bind/  # Montar la configuración del servidor BIND
-      - ./zonas:/var/lib/bind/  # Montar el directorio de zonas
+      - ./conf:/etc/bind/  # Montar a configuración do servidor BIND
+      - ./zonas:/var/lib/bind/  # Montar o directorio de zonas
 ```
 
 **9. Engade unha zoa tendaelectronica.int no teu docker DNS que teña:**
@@ -98,6 +97,9 @@ volumes:
 **Comproba que todo funciona có comando "dig"**  
 **Mostra nos logs que o servicio funciona ben usando a saída da terminal ó levantar o compose ou có comando "docker logs [nomeContenedorOuID]"**  
 (o apartado 9 realízase na máquina virtual)
+
+
+Aquí mostraremos a configuración da nosa zona tendaelectronica.in cos párametros requeridos no enunciado:
 
 ```
 $TTL 38400	; 10 hours 40 minutes
