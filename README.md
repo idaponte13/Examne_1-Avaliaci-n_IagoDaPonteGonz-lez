@@ -78,7 +78,8 @@ ports:
 
 **7. Para qué serve o rexistro CNAME? Pon un exemplo**
 
-Serve para asignar un nome de dominio DNS con alias a outro con nome canónico principal  `alias	IN CNAME	Exame`
+Serve para asignar un nome de dominio DNS con alias a outro con nome canónico principal  
+`alias	IN CNAME	Exame`
 
 **8. Cómo podo facer para que a configuración dun contenedor DNS non se borre se creo outro contenedor?**
 
