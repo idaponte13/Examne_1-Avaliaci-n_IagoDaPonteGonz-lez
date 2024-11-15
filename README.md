@@ -99,7 +99,7 @@ volumes:
 (o apartado 9 realízase na máquina virtual)
 
 
-Aquí mostraremos a configuración da nosa zona tendaelectronica.in cos párametros requeridos no enunciado:
+Aquí mostraremos a configuración da nosa zona tendaelectronica.in, situada dentro do directorio de zonas, cos párametros requeridos no enunciado:
 
 ```
 $TTL 38400	; 10 hours 40 minutes
@@ -145,24 +145,6 @@ ns.tendaelectronica.int. 38400	IN	A	172.16.0.2
 Posteriormente se facemos o comando `docker logs Exame_bind9` aprece o seguinte:
 
 ```
-Starting named...
-exec /usr/sbin/named -u "bind" "-g" ""
-15-Nov-2024 18:09:09.607 starting BIND 9.18.28-0ubuntu0.24.04.1-Ubuntu (Extended Support Version) <id:>
-15-Nov-2024 18:09:09.607 running on Linux x86_64 6.8.0-40-generic #40~22.04.3-Ubuntu SMP PREEMPT_DYNAMIC Tue Jul 30 17:30:19 UTC 2
-15-Nov-2024 18:09:09.607 built with  '--build=x86_64-linux-gnu' '--prefix=/usr' '--includedir=${prefix}/include' '--mandir=${prefix}/share/man' '--infodir=${prefix}/share/info' '--sysconfdir=/etc' '--localstatedir=/var' '--disable-option-checking' '--disable-silent-rules' '--libdir=${prefix}/lib/x86_64-linux-gnu' '--runstatedir=/run' '--disable-maintainer-mode' '--disable-dependency-tracking' '--libdir=/usr/lib/x86_64-linux-gnu' '--sysconfdir=/etc/bind' '--with-python=python3' '--localstatedir=/' '--enable-threads' '--enable-largefile' '--with-libtool' '--enable-shared' '--disable-static' '--with-gost=no' '--with-openssl=/usr' '--with-gssapi=yes' '--with-libidn2' '--with-json-c' '--with-lmdb=/usr' '--with-gnu-ld' '--with-maxminddb' '--with-atf=no' '--enable-ipv6' '--enable-rrl' '--enable-filter-aaaa' '--disable-native-pkcs11' 'build_alias=x86_64-linux-gnu' 'CFLAGS=-g -O2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -ffile-prefix-map=/build/bind9-CTg8aa/bind9-9.18.28=. -flto=auto -ffat-lto-objects -fstack-protector-strong -fstack-clash-protection -Wformat -Werror=format-security -fcf-protection -fdebug-prefix-map=/build/bind9-CTg8aa/bind9-9.18.28=/usr/src/bind9-1:9.18.28-0ubuntu0.24.04.1 -fno-strict-aliasing -fno-delete-null-pointer-checks -DNO_VERSION_DATE -DDIG_SIGCHASE' 'LDFLAGS=-Wl,-Bsymbolic-functions -flto=auto -ffat-lto-objects -Wl,-z,relro -Wl,-z,now' 'CPPFLAGS=-Wdate-time -D_FORTIFY_SOURCE=3'
-15-Nov-2024 18:09:09.607 running as: named -u bind -g
-15-Nov-2024 18:09:09.607 compiled by GCC 13.2.0
-15-Nov-2024 18:09:09.607 compiled with OpenSSL version: OpenSSL 3.0.13 30 Jan 2024
-15-Nov-2024 18:09:09.607 linked to OpenSSL version: OpenSSL 3.0.13 30 Jan 2024
-15-Nov-2024 18:09:09.607 compiled with libuv version: 1.48.0
-15-Nov-2024 18:09:09.607 linked to libuv version: 1.48.0
-15-Nov-2024 18:09:09.607 compiled with libxml2 version: 2.9.14
-15-Nov-2024 18:09:09.607 linked to libxml2 version: 20914
-15-Nov-2024 18:09:09.607 compiled with json-c version: 0.17
-15-Nov-2024 18:09:09.607 linked to json-c version: 0.17
-15-Nov-2024 18:09:09.607 compiled with zlib version: 1.3
-15-Nov-2024 18:09:09.607 linked to zlib version: 1.3
-15-Nov-2024 18:09:09.607 ----------------------------------------------------
 15-Nov-2024 18:09:09.607 BIND 9 is maintained by Internet Systems Consortium,
 15-Nov-2024 18:09:09.607 Inc. (ISC), a non-profit 501(c)(3) public-benefit 
 15-Nov-2024 18:09:09.607 corporation.  Support and training for BIND 9 are 
