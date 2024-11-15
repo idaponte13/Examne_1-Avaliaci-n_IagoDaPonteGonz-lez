@@ -6,6 +6,7 @@ Para poder abrir unha consola dun contenedor hai varios metodos. Se o facemos de
 
 **2. No contenedor anterior (en execución), qué opciones tes que ter usado ó arrincalo para poder interactuar coas súas entradas e salidas**
 
+`i` para manter a terminal aberta e a `t` para crear unha terminal propia.
 `docker run -it (nome do contenedor)`
 
 **3. Cómo sería un ficheiro docker-compose para que dous contenedores se comuniquen entre si nunha rede só deles?**
