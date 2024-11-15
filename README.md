@@ -143,7 +143,7 @@ ns.tendaelectronica.int. 38400	IN	A	172.16.0.2
 ;; MSG SIZE  rcvd: 96
 ```
 
-Posteriormente se facemos o comando `docker logs Exame_bind9` aprece o seguinte:
+Posteriormente se facemos o comando `docker logs Exame_bind9` aparece o seguinte:
 
 ```
 15-Nov-2024 18:09:09.607 BIND 9 is maintained by Internet Systems Consortium,
